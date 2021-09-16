@@ -1,6 +1,10 @@
 # ProjectFlixster
 Flix is an app that allows users to browse movies from the [The Movie Database API](http://docs.themoviedb.apiary.io/#).
 
+Submitted by: **Ahmet Bilici**
+
+Time spent: **2** hours spent in total
+
 ## Flix Part 1
 
 #### REQUIRED (10pts)
