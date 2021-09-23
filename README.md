@@ -41,7 +41,7 @@ Time spent: **2** hours spent in total
 ### App Walkthough GIF
 
 <img src="https://github.com/The-Yigit/ProjectFlixster/blob/master/flixsterGIF1.gif" width=250><br>
-<img src="https://github.com/The-Yigit/ProjectFlixster/blob/master/flixsterGIF2.gif" width=550><br>
+<img src="" width=550><br>
 
 ### Notes
 I will add additional activity when users click on the movie image and that shows the details of the movie soon.
