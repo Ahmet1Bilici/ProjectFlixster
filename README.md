@@ -40,7 +40,7 @@ Time spent: **2** hours spent in total
 
 ### App Walkthough GIF
 
-<img src="https://github.com/The-Yigit/ProjectFlixster/blob/master/flixsterGIF.gif" width=250><br>
+<img src="https://github.com/The-Yigit/ProjectFlixster/blob/master/flixsterGIF1.gif" width=250><br>
 <img src="https://github.com/The-Yigit/ProjectFlixster/blob/master/flixsterGIF2.gif" width=550><br>
 
 ### Notes
