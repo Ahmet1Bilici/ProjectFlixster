@@ -3,26 +3,38 @@ package models;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.parceler.Parcel;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
+@Parcel
 public class Movie {
 
     String backdropPath;
+    String releaseDate;
+    String originalLanguage;
     String posterPath;
     String title;
     String overview;
-    String averageScore;
+    int movieID;
+    double averageScore;
 
 
+    //Empty constructor for Parcel library
+    public Movie(){}
 
     public Movie(JSONObject jsonObject) throws JSONException {
         backdropPath = jsonObject.getString("backdrop_path");
         posterPath = jsonObject.getString("poster_path");
         title = jsonObject.getString("title");
         overview = jsonObject.getString("overview");
-        averageScore = jsonObject.getString("vote_average");
+        averageScore = jsonObject.getDouble("vote_average");
+        movieID = jsonObject.getInt("id");
+        releaseDate = jsonObject.getString("release_date");
+        originalLanguage = jsonObject.getString("original_language").toUpperCase(Locale.ROOT);
+
     }
 
     public static List<Movie> fromJsonArr(JSONArray movieJsonArray) throws JSONException {
@@ -47,8 +59,22 @@ public class Movie {
     }
 
     public String getOverview() {
-        return overview + "\nScore:(" + averageScore + ")";
+        return overview + "\nIMDb Score:(" + averageScore + ")";
     }
 
+    public double getAverageScore() {
+        return averageScore;
+    }
 
+    public int getMovieID() {
+        return movieID;
+    }
+
+    public String getReleaseDate() {
+        return releaseDate;
+    }
+
+    public String getOriginalLanguage() {
+        return originalLanguage;
+    }
 }
